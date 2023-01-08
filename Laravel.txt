@@ -1,0 +1,37 @@
+LARAVEL INTRO--------->
+--> php based web framework
+--> use to develop backend as well as frontend 
+--> open source framework.
+--> OOps
+--> follows MVC(model-view-controller)
+--> works with the help of Artisan CLI
+###Features of laravel:
+->Built in Authentication and authorization.
+->Packaging System
+->Multiple file System
+->Artisan Console
+->Eloquent ORM(Object Relational Model)
+->Template Engine
+->Task Scheduling
+->Event and Broadcasting
+->Testing
+
+
+##Routes Methods:
+->get :used to view URL
+->post : used to store data
+->put :store data
+->patch :store data
+->delete : delete data
+
+##What is blade template in Laravel:
+- it is template engine in laravel framework
+- It replaces core php syntax of conditionals and loops with its own.	
+- to create a new view file save it with .blade.php instead of .php extension.
+-> to echo use {{$name}}
+
+
+
+_____>How to run Laravel  Project
+-->Go to project directory 
+--> using cmd -> php artisan serve

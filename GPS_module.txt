@@ -1,0 +1,22 @@
+gps module
+connection:
+Rx(gps)<->Rx(arduino)
+Tx(gps)<->Tx(arduino)
+Vcc(gps)<->3.3V(arduino)
+GND(gps)<->GND(arduino)
+
+voltage supply required: 3.3V (MAX)
+Default baud rate from gps chip is 9600.
+Cold Start -> searching for satellite to get stablized data.
+
+GPGLL->Geo Position Latitute and Longitude.
+NMEA sentences ->Protocol most of GPS use to read latitude and longitude
+NMEA=(National Marine Electronics Association)-> standard data format supported by GPS manufacturers
+=>If you are using Tx and Rx pin of arduino for serial communication rather than any other digital pin->
+NOTE:
+/*
+before uploading the code to arduino
+disconnect Tx and Rx pins connection from arduino to GPS module(Neo-8m)
+then after uploading code to arduino, connect again Tx,Rx pins to arduino.
+*/
+=>Serial communication is must for transferring GPS location from GPS module to arduino's serial port.

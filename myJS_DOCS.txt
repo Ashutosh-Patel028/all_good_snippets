@@ -1,0 +1,62 @@
+INTRO TO JAVASRIPT:
+
+JS Engines : ->V8 ->spiderMonkey
+
+ECMAscript: E6 | E8 | E10
+
+Variable: let | var | const
+
+printing output: console.log()
+
+user input: using HTML forms, prompt();
+
+printing output formatted:
+->console.log("i am ",name);
+->console.log("i am "+name);
+->console.log(`i am : $(name)`);
+
+**Interpolation: printing using backticks (``)
+
+**Falsy Values:
+->undefined : varible declared but value not assigned to variable and using varible 
+->null : empty
+->0 : 0 value
+->'' : empty string
+->NaN : not a number
+
+**Coersion : Losely type checking
+2=="2" -> evaluates true : only values are checked not type
+2==="2" -> evaluates false : value and type both are checked
+
+JS support functional programming.
+ ** functions in JS ** 
+1) normal function declaration
+
+function funcName(args){
+	//function body
+}
+
+2) Function Expression:
+
+var value = function (args){
+	//function body
+}
+
+3) Arrow function :
+var callme = (args) =>{
+	//function body
+}
+
+4) Call back Function
+
+**
+funcName(); -> calling function 
+funcName; -> referencing function
+**
+
+## Context in JS
+global context 
+window context in JS -> bigger context in js
+Execution context : variable object | scope chain | this
+->function declarations are scanned and made available. (becaz of global context)
+->variable declarations are scanned and made undefined. (becaz of global context)

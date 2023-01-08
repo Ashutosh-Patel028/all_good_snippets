@@ -1,0 +1,30 @@
+->Create React app
+npx create-react-app <appName>
+
+->Run the app/start the development server
+npm start
+
+->Build react app for publishing
+npm run build
+
+->JSX
+->Virtual DOM
+->Components
+	->Functional Components
+	->Class Components
+->Props   
+->Array Destructuring
+->State	
+	->setState
+	->stateful component
+	->stateless component
+->Hooks
+	->useState
+	->useEffect
+->Lifecycle methods  : Mounted,Unmounted,Update
+	->componentDidMount
+	->componentWillUnmount
+	->componentDidUpdate
+->Event Handling
+	->Event Name: camelCase;
+	->Event Handler: {handlerFunction}

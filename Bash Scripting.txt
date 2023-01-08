@@ -1,0 +1,124 @@
+=>Check the list of shells in system
+cat /etc/shells
+
+=>To find path of bash
+which bash
+
+=> create a new script 
+touch helloScript.sh
+
+=> to make our script executable 
+chmod  +x helloScript.sh
+
+=> To execute our script 
+./helloScript.sh
+
+=>Writing/viewing or some action into files
+someCommand > file.txt  ---> > means overwrite as new into file.txt
+someCommmand >> file.txt   ---> >> means append something into file.txt
+  
+=>Adding comment to bash script
+# ->single line comment
+: ' 
+//some content between lines
+' -> multi line comment
+
+=>Bash HereDoc  -->Used for multiline input
+[COMMAND] <<[-] 'DELIMITER'
+  HERE-DOCUMENT
+DELIMITER
+
+=>Variable declaration in bash
+variabeName = value
+
+=>Conditional Statement in bash
+if [ expression1 ]
+then 
+	#some statement1
+elif [ expression2 ]
+then
+   #some statement2
+else 
+	#some statement3
+fi
+
+=>Conditional Operators in shell bash
+<-->For comparing numbers
+-eq        -> equals
+-ne       -> not equals
+-gt 	->greater than
+-lt 	->less than
+-ge	->greater than or equal to
+-le 	->less than or equal to
+<--> To use angle brackets for comparing numbers like >= <=
+use (()) instead []
+>= greater than equal to
+<= less than equal to
+<---> for comparing strings
+==  ->equals
+!=  ->not equals
+
+&& -a    ->AND operator
+|| -o    ->OR operator
+! 	 ->NOT operator
+
+=> Reading input from user in shell bash
+read n  #here n is varible to hold input
+
+=> Printing output to console without new line
+printf #something
+
+<------------Script content --------------->
+#! /bin/bash
+
+#this will write string into file.txt
+echo "hello this is my first script">file.txt
+
+
+#appending into file.txt
+echo "panga ho gaya">>file.txt
+
+count=10
+if [ $count -eq 10 ]
+then 
+	echo "its true"
+fi
+
+<------------------------->
+**Every conditional statement must end with fi.
+$variableName  means accessing value of variable
+
+
+*****************
+#LOOPS in bash scripting
+1. while loop(it runs until condition is true)
+while [ $number -lt 10 ]
+do
+	echo "$number"
+	number=$(( number+1 ))
+done
+
+2. until loop(it runs until condition is false)
+until [ $number -ge 10 ]
+do
+	echo "$number"
+	number=$(( number+1 ))
+done
+
+3. for loop
+for i in 1 2 3 4 5
+do
+	echo $i
+done
+
+(or) use range based like {start..ending..increment}
+for i in {1..20..2}
+do
+	echo $i
+done
+
+(or) conventinal way of writing for loop
+for (( i=0;i<5;i++ ))
+do
+	echo $i
+done

@@ -1,0 +1,4 @@
+>netsh wlan show drivers
+if supported then
+netsh wlan set hostednetwork mode=allow  ssid=NOname key=12345678
+netsh wlan start hostednetwork
