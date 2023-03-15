@@ -1,0 +1,6 @@
+--> Fix cache problem in XAMPP
+XAMPP does not update CSS and JS files when we make any changes in files to server.
+because cache is being collected and websites does not refresh page so we can avoid this problem by many ways!
+1) ctrl+F5 before refreshing page 🌟✅
+2) Using Incognito Mode Browser
+3) Making version using PHP for files.
