@@ -28,3 +28,6 @@ npm run build
 ->Event Handling
 	->Event Name: camelCase;
 	->Event Handler: {handlerFunction}
+
+->React Router
+npm install react-router-dom --save

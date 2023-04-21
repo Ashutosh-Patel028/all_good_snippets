@@ -1,0 +1,11 @@
+To install a MySQL database from a dump file (project_x.sql), simply follow the following steps. 
+Step 1: Copy the project_x.sql file in C:\Program files\Mysql\MySql server 5.1\Bin folder.
+Step 2: Open MySQL and type the following command to create the database named project_x.
+	mysql> create database project_x; 
+Step 3: Open Command Window (Start ->Run -> cmd)
+Step 4: Go to the following folder using CD command of DOS. 
+      C:\Program files\Mysql\MySql server 5.1\Bin>
+Step 5: type the following command on above prompt -
+C:….\bin> mysql -u root –p pwd  project_x < project_x.sql
+This will create a project_x databse with required tables.
+

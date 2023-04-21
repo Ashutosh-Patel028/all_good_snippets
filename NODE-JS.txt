@@ -1,0 +1,39 @@
+NODEJS
+-RunTime Environment for executing JS
+-NOT A FRAMEWORK
+-JS Engine
+
+->NODE Application are highly scalable - Non-blocking Asynchronous Nature
+-A single thread can handle multiple request.
+-Node Applications are Asynchronous By default.
+-Node is ideal for I/O-intensive apps.
+-Do not use NODE for CPU-intensive apps.
+-We can't acess "document" and "window" api in NODE application.
+
+->NODE Core
+->Node Module System
+-OS
+-File System
+-Event
+-http
+
+#Global Objects
+-setTimeout()
+-clearTimeout()
+-setInterval()
+-clearInterval()
+
+*Every File in a NODE application are considered as modules.
+*Variables/Functions defined in that file are scope to that file.
+*To make variable or function of file available outside file,we have to explicitly export it.
+
+*jshint app.js
+__filename
+__dirname
+
+#NODE BUILT IN MODULES
+-path module
+-os module
+-file system module
+-Events module
+-HTTP module

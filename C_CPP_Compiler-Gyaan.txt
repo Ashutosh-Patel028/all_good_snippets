@@ -1,0 +1,18 @@
+#How to execute C++ file in CMD(Command Prompt) Windows
+>g++ fileName.cpp
+-this will compile cpp file
+>a
+or 
+>a.exe
+-this will execute file
+*if output fileName is not specified then g++ compiler by default set output fileName to 'a.exe'
+
+#Some more compiler Option in g++ compiler
+>g++ fileName.cpp -o OutputFile
+*this will compile c++ file and set output file Name as 'OutputFile'
+>OutputFile.exe     (or)     >OutputFile
+*this will run output file in CMD
+
+>g++ fileName.cpp -o OutputFile && OutputFile.exe<input.txt>output.txt
+* This will first compile c++ file and set output file to 'OutputFile' and then it will execute ouputfile as well and it will take
+input from 'input.txt' and put any outcome to  'output.txt'

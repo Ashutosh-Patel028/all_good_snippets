@@ -1,0 +1,42 @@
+Max size of array in cpp can be -> ~10^7 order(when array is declared globally)
+Max size of array in cpp (when declared inside main() funtion) -> ~10^5 order
+#Global arrays are 0 initialised by default.
+
+*****Iterations vs Time taken to run program in Online Coding Judges****
+Iterations ---> Time taken
+10^7 ----> 1 sec
+10^8 ----> 10 sec
+10^9 ----> 100 sec ~= 1 min
+10^10----> 1000 sec ~= 15 min
+.......
+....... so on
+
+
+******Rough Ranges of dataTypes in C++*******
+int : -10^9 to 10^9 			Exactly=> INT_MIN<=int<=INT_MAX
+long int : -10^12 to 10^12
+long long int: -10^18 to 10^18
+
+
+##calculation in c++ always takes place in higher data type among operands:
+exp1-> double d = 7/3;		//output:2
+becaz 7 and 3 are both int so output(7/3) as int is 2 which is later stored in double variable d.
+exp2-> double d = 7/3.0;	//output:2.33333
+becaz here 7 is int and 3.0 is double, so higher datatype is double hence calculation is converted into double(2.33333) and then stored in double varible d.
+exp3-> int a=100000,b=100000;
+       cout<<a*b<<endl;	//output:garbage value
+becaz a and b are integer value so a*b is also integer value but multiplication exceeds integer range, so results in garabge value.
+soln: cout<<a*1LL*b; //output: 10^10(correct)   -> becaz 1LL converts int to long long type and output lies in LL range.
+
+
+##Absorb a blank line in C++ input##
+cin.ignore();
+
+
+Common Verdicts/Errors in Online Coding Sites:
+-> RE : Runtime Error
+-> TLE: Time limit Exceeded
+-> MLE: Memory limit Exceeded
+
+
+
