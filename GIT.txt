@@ -1,0 +1,12 @@
+#remove node modules from folder- GIT
+>git rm -r --cached node_modules
+
+#Remove remote origin from local git repo
+>git remote remove origin
+
+#Info about remote origin
+>git remote -v
+
+#Check if you are in a GIT-repo or not
+>git rev-parse --is-inside-work-tree
+#returns true if it is git repo and return fatal:not a git repo when its not

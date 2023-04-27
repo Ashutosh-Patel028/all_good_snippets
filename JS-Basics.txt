@@ -1,0 +1,62 @@
+@CallBack is not always asynchronous!
+
+#> Callback Hell -> Promises ->Async-Await
+-To handle callback hell , promises were made and then promises were again optimised to Aync-Awaits.
+
+
+#Promises
+
+const obj = new Promise((resolve,reject)=>{
+    let req=false;
+    if(req){
+        resolve("Request Resolved");
+    }else{
+        reject("Request Rejected");
+    }
+}).then(
+    (value) =>{console.log(value);},
+    (error) =>{console.log(error);}
+).catch((error)=>{
+    console.log("catch: "+error);
+}).finally(()=>{    
+    console.log("Cleaned Up!");
+});
+
+*).then may return another promise when can be then chained with multiple .then 
+*) finally is executed everytime no matter request is reject or resolved.
+*) catch is executed when an error occurs.
+
+
+#Async-Await Syntax
+1) Method-1
+async function HandlePromise(){
+    let val1 = await SomePromiseFunc();
+    let val2 = await SomePromseFunc2(val1);
+    console.log(val2);
+}
+
+HandlePromise();
+
+2) Method-2
+
+let HandlePromise = async function () { 
+    let val1 = await SomePromiseFunc();
+    let val2 = await SomePromseFunc2(val1);
+    console.log(val2);
+}
+
+HandlePromise();
+
+3)Method-3 -> using try catch to handle rejection from promise
+
+let HandlePromise = async function () {
+    try{
+        let val1 = await SomePromiseFunc();
+        let val2 = await SomePromseFunc2(val1);
+        console.log(val2);
+    }catch{
+        console.log("Error : Could not fetch values");
+    }
+}
+
+HandlePromise();

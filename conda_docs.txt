@@ -1,0 +1,6 @@
+conda activate env_saad
+python drowsiness_detection.py
+
+
+
+conda info --env

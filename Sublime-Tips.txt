@@ -1,0 +1,16 @@
+#Open Command Palette in Sublime Text
+>ctrl+P
+
+#Disable a Package in Sublime Text
+>Press ctrl+P
+>Type Disable Package 
+> Hit Enter
+>Choose package name from Drop Down list
+>Hit Enter
+
+#Enable a Package in Sublime Text
+>Press ctrl+P
+>Type EnablePackage 
+> Hit Enter
+>Choose package name from Drop Down list
+>Hit Enter
