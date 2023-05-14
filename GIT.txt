@@ -10,3 +10,33 @@
 #Check if you are in a GIT-repo or not
 >git rev-parse --is-inside-work-tree
 #returns true if it is git repo and return fatal:not a git repo when its not
+
+git init -> Initialize a local Git repository
+
+git status -> Check status
+
+git config --global --list -> Get Global Config
+
+git add file-name -> Add a file to the staging area
+
+git commit -a -m "commit message" -> Commit changes all changes
+
+git branch branch_name -> Creates a new branch
+
+git branch -d branch_name -> Delete's branch
+
+git branch -> List of branches
+
+git checkout -b branch_name -> Create a new branch and switch to it
+
+git checkout branch_name -> Switch to a branch
+
+git merge source_branch target_branch -> Merge a source branch into a target branch
+
+git diff branch1 branch2 -> Compare the diff between two branches
+
+git stash -> Stash changes into a temp directory
+
+git stash clear -> Remove all stashed entries
+
+git log --summary -> View changes
