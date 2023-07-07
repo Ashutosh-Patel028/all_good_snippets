@@ -40,3 +40,16 @@ git stash -> Stash changes into a temp directory
 git stash clear -> Remove all stashed entries
 
 git log --summary -> View changes
+
+git log  ->See commit history with commit id and details
+
+
+#Undo current commit to previous one without removing file changes
+>git reset --soft HEAD^
+
+#Move current stages items to unstaged area -> undo current staged items
+>git reset HEAD
+
+-undo sepefic staged file/folder
+>git reset HEAD fileNameorFolderName
+
