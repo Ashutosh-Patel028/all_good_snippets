@@ -1,0 +1,16 @@
+Usage of .env file in Project:
+-use to store config or settings for your app.
+-examples include API keys, database credentials, URLs for accessing third-party data etc.
+-main benefit is to make your app easily supported on various different environments
+
+->In NodeJS
+->install dotenv package >npm i dotenv
+->how to use? : require("dotenv").configure();
+process.env.VARIABLE_NAME
+
+
+Examples:
+
+-----------.env-----------------
+PORT = 3306
+DATABASE_NAME = sampledb
