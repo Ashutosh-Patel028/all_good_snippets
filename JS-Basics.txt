@@ -60,3 +60,7 @@ let HandlePromise = async function () {
 }
 
 HandlePromise();
+
+
+#Measure JavaScript Execution Time
+performance.now()
