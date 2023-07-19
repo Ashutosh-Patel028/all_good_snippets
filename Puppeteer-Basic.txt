@@ -1,0 +1,33 @@
+onst puppeteer = require('puppeteer-extra');
+const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+
+puppeteer.use(StealthPlugin());
+
+const main = async () => {
+    const browser = await puppeteer.launch({headless:false, defaultViewport: {width: 1080, height: 1024}});
+    // const context = await browser.createIncognitoBrowserContext(); //open incognito window context
+
+    const page = await browser.newPage();
+    console.time("goto");
+    await page.goto('https://virtusacoetraining.examly.io/login');
+    await page.waitForSelector("#email");
+    console.timeEnd("goto");
+    await page.waitForTimeout(2000);
+    await page.type("#email","ashutoshpatel028@gmail.com");
+    await page.click(".t-rounded-4");
+    await page.waitForSelector("#password",{visible: true,timeout:0});
+    await page.waitForTimeout(2000);
+    await page.type("#password","ashutoshpatel028");
+    await page.click(".t-rounded-4");
+    await page.waitForSelector("#courseCardID-1");
+    await page.click("#courseCardID-1");
+    // await page.type("#login-password2","Coderashu@123");
+    // await page.click('#login-check2');
+    // await page.click('.login-button');
+    // await page.waitForTimeout(20000);
+    // await page.screenshot({ path: fname });
+
+    // await browser.close();
+}
+
+main();

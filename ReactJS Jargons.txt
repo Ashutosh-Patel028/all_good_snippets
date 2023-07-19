@@ -1,0 +1,87 @@
+#React JS Jargons
+
+->Bundlers : Parcel,webpack,rollup,esbuild
+->Virtual DOM
+->Hot Module Reloading
+->Tree Shaking
+->Spread Operator [...SomeObj]
+->Transitive Dependencies
+->Optional Chaining ?.
+->Reconciliation Algo
+->Diff Algorithm
+->React Fiber
+->Config Driven UI
+->one-way data binding
+->React-state
+->Hooks
+->useState()
+->useEffect()
+->dependency array
+->API call using useEffect() once after the rendering
+->CORS
+->Shimmer UI Design
+->Conditional Rendering
+->SPA - Single Page Application
+->Routing
+->Client Side Routing (No network call)
+->Server Side Routing (network call to load page)
+->Dynamic Routing/Segment
+->Custom Hooks
+->Named Export vs Default Export
+->Cleaning Cache , Cleaning EventListeners,Clear Console, clear setIntervals,clear setTimeouts
+->Early return
+->Chunking/Code Splitting/Dynamic Bundling/Lazy Loading/ On Demand Loading/Dynamic Import
+
+
+#Pros and Cons of using UI Libraries
+->Consistent UI
+->Easy to Use
+->Fast development
+->Most UI Framework take care of Responsiveness
+cons:
+->Bundle Size Matters!!
+->Losing control over Design
+
+
+#Ways of Adding Style to React Project
+1)Normal Native CSS
+2)SCSS
+3)Inline CSS
+4)Component Libraries - Material UI,Base UI,Ant Design,Chakra,BootStrap
+5)Styled Components
+6)Tailwind CSS Framework
+
+#Deep Dive - Tailwind CSS
+->inline CSS/ CSS on the go
+->Reusability
+->Pre-build CSS classes
+->Less Bundle Size
+->Flexible UI/ offers 	More Customisation 
+
+
+
+---------Cool NPM Package to Use-----(Explore the World)
+->Formik
+->Parcel
+->Babel
+->React Router
+-----------------------------
+->UI Layer
+->Data Layer
+->Props Drilling
+->Lifting the state Up
+->CreateContext()
+->useContext()	---- used to avoid prop drilling
+
+---------------------------
+REDUX
+why? -> to manage huge amount of data in data layer
+->Redux Toolkit(RTK)
+-Redux store
+-slice
+->>write to store:
+-dispatch action
+-reducer
+->>Read from store:
+-selector
+-subsribing to store  - useSelector() hook is used

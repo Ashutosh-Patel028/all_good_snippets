@@ -1,0 +1,39 @@
+Create django Project - Hello
+>django-admin startproject Hello
+
+Create an App - Home
+>python manage.py startapp Home
+
+Run Python server
+>python manage.py runserver
+
+>python manage.py makemigrations
+>python manage.py migrate
+>python manage.py createsuperuser
+
+
+->Template Inheritance
+->blocks
+->django messages
+
+>python manage.py shell
+
+->DTL(django Template Language)
+->Jinja Pattern/templated:
+	-Passing Dynamic Content to templates
+
+->MVT(Model View Template)
+	-A software design pattern
+
+Model:Data
+View: Logic(Business logic)
+Template: Layout
+
+->Set Path of Static files in django:
+STATICFILES_DIRS=[os.path.join(BASE_DIR,'static']
+STATIC_ROOT = os.path.join(BASE_DIT,'assets')
+>python manage.py collectstatic
+-load static dir before accessing accessing static files/folder
+{%load static %}
+-update paths to access static files:
+{%static filesPaths %}

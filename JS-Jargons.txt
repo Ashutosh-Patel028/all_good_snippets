@@ -1,0 +1,118 @@
+#JS - Jargons/Terms/Terminologies/Functionalities/Concepts/Technicalities
+
+->performance.now()    //returns time elapsed when program starts in milliseconds
+
+About JavaScript:
+->Dynamically Typed / Dynamic Language
+->Loosly Typed
+->null vs undefined vs NaN
+->Primitive DataTypes (Immutable/Non-Objects):
+	-Number
+	-String
+	-Boolean : true / false
+	-Symbol
+	-null
+	-undefined
+->== vs ===
+->strict equality operator(===)
+->strictly inequality operator(!==)
+->Strictly equality comparison algorithm
+->abstract equality comparison algorithm
+->Number.MAX_VALUE
+->Number.MIN_VALUE
+->Symbolic Numbers:
+	Infinity
+	-Infinity
+	NaN
+->Number.MAX_SAFE_INTEGER
+->Number.MIN_SAFE_INTEGER
+->Number.isSafeInteger()
+->typeof operator
+->Coercion
+->Coercion Rules:
+	If you add a number and a string, the number is coerced to a string.
+	If you add a boolean and a string, the boolean is coerced to a string.
+	If you add a number and a boolean, the boolean is coerced to a number.
+
+->JS global Methods
+->Number()
+->parseInt()
+->parseFloat()
+->String()
+
+->JS Loops:
+->for
+->for in 
+->for of 
+->forEach
+->while
+->do while
+
+->Common String Methods--->
+charAt()
+concat()
+includes()
+endsWith()
+indexOf()
+lastIndexOf()
+match()
+normalize()
+repeat()
+replace()
+search()
+slice()
+split()
+startsWith()
+substr()
+substring()
+toLowerCase()
+toUpperCase()
+trim()
+trimLeft()
+trimRight()
+
+->JS Arrays Methods
+length() - returns length of array
+push() 	- add new  element at end of array
+pop() 	- removes last element from array
+shift()   - removes element from front of array
+unshift()  - adds element to front of array
+indexOf()  -returns index of an element in array
+splice()   -removes element by index position
+slice()    - Shallow copies array
+sort()	   -sorts array(customizable based on comparator function)
+-Array loops:
+-forEach
+-for of
+-for in
+
+
+->JS Classes, Objects and Functions
+->singleton class  :- single instance
+->anonymous constructor function
+->functional classes
+->
+->Class Declarations:
+	-function declarations
+	-class declarations
+	-Class Expressions
+->Methods in Classes
+	-Prototype Methods
+	-Static Methods
+
+->Hoisting in JS
+
+->Arrows Function in JS
+syntax:
+(parameter) => {statements}
+parameter => {statements}
+parameter => expression
+parameter => {return expression}
+(param1, param2, ..., paramN) => {statements}
+(param1, param2, ..., paramN) => expression
+(param1, param2, ..., paramN) => {return expression}
+
+
+->Template Literals/Template Strings
+->String Interpolation
+->Tagged Template Literals

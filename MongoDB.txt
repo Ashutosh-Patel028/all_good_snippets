@@ -1,0 +1,54 @@
+1. TO use mongoDB service inside system:
+->first install mongoDB community server inside machine
+->download exe file for windows and install it.
+->go to bin path of mongodb server and copy it
+->Add bin path to environment varibles of system to recognize commands like "mongod", "mongo"
+
+Run in CMD to check mongoDB installed and configured correctly:
+>mongo
+-shows version of mongoDB installed.
+
+2. TO use mongoDB service inside projects check whether MongoDaemon is running or not
+if not  ->run mongoDB daemon on your system before using it.
+->it is located in bin dir of mongoDB path
+->if environment variables are set it can be used from anywhere 
+->type "mongod" command inside terminal to run mongoDB daemon 
+>mongod
+-this command starts mongoDB server inside machine
+-keep it running inside terminal to keep using mongoDB service.
+
+--if failes to find path of db path ->shows error -> then specify db path in some folder
+->create a db folder and copy path of db folder and run this command to start mondoDaemon inside that db folder.
+
+> mongod --dbpath /users/ashut/db
+
+--here /users/ashut/db is path for my db folder.
+-this db folder will be used by mongodb to handle/manage databases
+
+->now connect to whatever mongodb instance you want!!
+->Either use MongoDB Compass to connect or use terminal clients 
+
+3. TO keep mongoDB server running forever in system/machine
+-go to services inside windows
+-find mongoDB service and click start to automatic running.
+
+
+4.
+-TO use mongoDB queries inside command prompt -> install a service called "mongosh" from internet
+->Extract files and save somewhere inside in C drive
+->Add path of bin folder of mongosh service to environment variables to use command "mongosh" inside terminal.
+->Now use mongosh command in command prompt to access mongoDB through command prompt.
+-keep mongoDB server running before using "mongosh" command 
+>mongosh
+-connect to 
+
+
+=> MongoDB commands
+> show dbs
+-shows all database
+
+>use users
+-uses users database for all operations
+
+>db.managers.insertOne({item:"1",qty:"2"})
+-inserts a document in managers collection of current database.

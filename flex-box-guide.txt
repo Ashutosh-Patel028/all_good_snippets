@@ -1,0 +1,25 @@
+flexBox introduction:
+
+
+#properties#
+
+>align-items:
+center,flex-start,flex-end,baseline,stretch
+
+>justify-content:
+center,flex-start,flex-end,space-between,space-around,space-evenly
+
+>flex-direction:
+row,row-reverse,column,column-reverse
+
+>order: Sets the order to lay out an item in a flexsets the order to lay out an item in a flex container.
+-3,-2,-1,0,1,2,3,
+
+>align-self: Overrides flex item's align-items value.align specific item vertically
+center,flex-start,flex-end,stretch
+
+>flex-wrap: Sets whether flex items are forced onto one line or can wrap onto multiple lines.
+wrap,no-wrap(default),wrap-reverse
+
+>align-content: aligns flex-lines vertically
+center,flex-start,flex-end,space-between,space-around,
